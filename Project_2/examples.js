@@ -46,20 +46,20 @@
 
 
 
-// // Declare function
-// function fetchData(callback) {
-//     setTimeout(() => {
-//       const data = {name: "John", age: 30};
-//       callback(data);
-//     }, 3000);
-//   }
+// Declare function
+function fetchData(callback) {
+    setTimeout(() => {
+      const data = {name: "John", age: 30};
+      callback(data);
+    }, 3000);
+  }
   
-//   // Execute function with a callback
-//   fetchData(function(data) {
-//     console.log(data);
-//   });
+  // Execute function with a callback
+  fetchData(function(data) {
+    console.log(data);
+  });
   
-//   console.log("Data is being fetched...");
+  console.log("Data is being fetched...");
   
 
 //   // Initialize a promise
@@ -71,7 +71,7 @@
 //         resolve("Hello from the promise!");
 //     }, 2000);
 // });
-// // console.log(myPromise)
+// console.log(myPromise)
 
 //  myPromise
 //   .then((result) => {
@@ -120,21 +120,21 @@
 //   console.log(values);
 // })
 
-// fetch('https://some-api.com/data')
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data);
-//   })
-//   .catch(error => {
-//     console.error('Error:', error);
-//   });
+// // fetch('https://some-api.com/data')
+// //   .then(response => response.json())
+// //   .then(data => {
+// //     console.log(data);
+// //   })
+// //   .catch(error => {
+// //     console.error('Error:', error);
+// //   });
 
 
-// async function getData() {
-//     const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-//     const data = await response.json();
-//     console.log(data);
-//   }
+// // async function getData() {
+// //     const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+// //     const data = await response.json();
+// //     console.log(data);
+// //   }
   
-//   getData();
+// //   getData();
   

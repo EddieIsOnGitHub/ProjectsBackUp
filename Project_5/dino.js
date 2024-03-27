@@ -1,3 +1,4 @@
+
 // board
 let board;
 let boardWidth = 1050;
@@ -71,6 +72,9 @@ window.onload = function () {
     requestAnimationFrame(update)
     setInterval(placeCactus, 500)
     document.addEventListener("keydown", moveDino);
+
+    
+
 }
 function update() {
     requestAnimationFrame(update);
@@ -94,6 +98,8 @@ function update() {
             dinoImg.src = "./img/dinod.jpg"
             dinoImg.onload = function () {
                 context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
+                    console.log(`Well done, reload the page to try again`);
+
             }
         }
     }
@@ -158,20 +164,19 @@ function detectCollisiom(a, b) {
         a.y + a.height > b.y; // a bottom left corner passes b top left corner 
 }
 
-//local storage
+//Asynchronous
 
-// const input = document.querySelector("input");
-//     h2 = document.querySelector("h2");
-//     h2.innerHTMl = localStorage.getItem("value");
+function someLongRunningFunction() {
+    let start = Date.now();
+    while (Date.now() - start < 3000) {
 
-// input.addEventListener("keyup", display);
+    }
+    console.log("Get ready"); 
+}
+console.log("game is starting up");
 
+let result = someLongRunningFunction();
 
-// function display(){
-//     localStorage.setItem("value", input.value);
-//     h2.innerHTMl = localStorage.getItem("value");
-// }
-    
 
 
 
