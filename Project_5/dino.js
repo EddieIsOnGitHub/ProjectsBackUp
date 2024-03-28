@@ -57,7 +57,7 @@ window.onload = function () {
     dinoImg.src = "./img/dino.png";
     dinoImg.onload = function () {
         context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
-    }
+    };
 
     cactus1Img = new Image();
     cactus1Img.src = "./img/cac1.png";
@@ -73,9 +73,7 @@ window.onload = function () {
     setInterval(placeCactus, 500)
     document.addEventListener("keydown", moveDino);
 
-    
-
-}
+};
 function update() {
     requestAnimationFrame(update);
     if (gameOver) {
